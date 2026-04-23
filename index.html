@@ -7,155 +7,148 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <video class="hero-video" autoplay muted loop>
-            <source src="hero-video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <img src="ponyo.gif" alt="Ponyo" class="ponyo-gif">
-            <h1 class="title">My Ghibli</h1>
-        </div>
-    </section>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="#movies">MOVIES</a>
-        <a href="#maestro">THE MAESTRO</a>
-    </nav>
+<!-- Hero 区域：视频 + 背景图 + GIF + 标题 -->
+<section class="hero">
+    <!-- 👇 视频已写死在这里，直接用 -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="hero-video.mp4" type="video/mp4">
+    </video>
 
-    <!-- Movies Section -->
-    <section id="movies" class="movies-section">
-        <h2>Studio Ghibli Films</h2>
-        <div class="movie-container">
-            <!-- 1. Nausicaä of the Valley of the Wind -->
-            <article class="movie-card">
-                <img src="nausicaa.jpg" alt="Nausicaä of the Valley of the Wind">
-                <div class="overlay">
-                    <h3>Nausicaä of the Valley of the Wind</h3>
-                    <p>A brave princess in a post-apocalyptic world strives to protect her people and the environment from destructive forces.</p>
-                </div>
-            </article>
+    <div class="hero-content">
+        <img src="ponyo.gif" alt="Ponyo" class="ponyo-gif">
+        <h1 class="My Ghibli">My Ghibli</h1>
+    </div>
+</section>
 
-            <!-- 2. Castle in the Sky -->
-            <article class="movie-card">
-                <img src="castle-in-the-sky.jpg" alt="Castle in the Sky">
-                <div class="overlay">
-                    <h3>Castle in the Sky</h3>
-                    <p>A young boy and a girl with a magic crystal must race against pirates and government agents to find a legendary floating castle.</p>
-                </div>
-            </article>
+<!-- 导航栏 -->
+<nav class="navbar">
+    <a href="#movies">MOVIES</a>
+    <a href="#maestro">THE MAESTRO</a>
+</nav>
 
-            <!-- 3. My Neighbor Totoro -->
-            <article class="movie-card">
-                <img src="totoro.jpg" alt="My Neighbor Totoro">
-                <div class="overlay">
-                    <h3>My Neighbor Totoro</h3>
-                    <p>Two sisters move to the countryside and befriend friendly forest spirits, including the giant Totoro.</p>
-                </div>
-            </article>
+<!-- 电影卡片 -->
+<section id="movies" class="movies-section">
+    <h2>MOVIES</h2>
+    <div class="movie-container">
 
-            <!-- 4. Kiki's Delivery Service -->
-            <article class="movie-card">
-                <img src="kiki.jpg" alt="Kiki's Delivery Service">
-                <div class="overlay">
-                    <h3>Kiki's Delivery Service</h3>
-                    <p>A young witch moves to a new town and starts her own delivery service using her flying broomstick.</p>
-                </div>
-            </article>
-
-            <!-- 5. Only Yesterday -->
-            <article class="movie-card">
-                <img src="only-yesterday.jpg" alt="Only Yesterday">
-                <div class="overlay">
-                    <h3>Only Yesterday</h3>
-                    <p>A woman reflects on her childhood memories while visiting the countryside and reconnecting with her past.</p>
-                </div>
-            </article>
-
-            <!-- 6. Porco Rosso -->
-            <article class="movie-card">
-                <img src="porco-rosso.jpg" alt="Porco Rosso">
-                <div class="overlay">
-                    <h3>Porco Rosso</h3>
-                    <p>A cursed Italian fighter pilot who becomes a pig battles air pirates in the Adriatic Sea.</p>
-                </div>
-            </article>
-
-            <!-- 7. Pom Poko -->
-            <article class="movie-card">
-                <img src="pom-poko.jpg" alt="Pom Poko">
-                <div class="overlay">
-                    <h3>Pom Poko</h3>
-                    <p>Shape-shifting tanuki try to stop humans from destroying their forest home.</p>
-                </div>
-            </article>
-
-            <!-- 8. Whisper of the Heart -->
-            <article class="movie-card">
-                <img src="whisper-of-the-heart.jpg" alt="Whisper of the Heart">
-                <div class="overlay">
-                    <h3>Whisper of the Heart</h3>
-                    <p>A young girl discovers her passion for writing and meets a boy who shares her dreams.</p>
-                </div>
-            </article>
-
-            <!-- 9. Princess Mononoke -->
-            <article class="movie-card">
-                <img src="mononoke.jpg" alt="Princess Mononoke">
-                <div class="overlay">
-                    <h3>Princess Mononoke</h3>
-                    <p>A warrior prince becomes entangled in a conflict between forest gods and a mining colony.</p>
-                </div>
-            </article>
-
-            <!-- 10. Spirited Away -->
-            <article class="movie-card">
-                <img src="spirited-away.jpg" alt="Spirited Away">
-                <div class="overlay">
-                    <h3>Spirited Away</h3>
-                    <p>A young girl enters a spirit world and must work to free her parents from a curse.</p>
-                </div>
-            </article>
-
-            <!-- 11. The Cat Returns -->
-            <article class="movie-card">
-                <img src="cat-returns.jpg" alt="The Cat Returns">
-                <div class="overlay">
-                    <h3>The Cat Returns</h3>
-                    <p>A girl who saves a cat is taken to the Cat Kingdom and must find her way back home.</p>
-                </div>
-            </article>
-
-            <!-- 12. Howl's Moving Castle -->
-            <article class="movie-card">
-                <img src="howl.jpg" alt="Howl's Moving Castle">
-                <div class="overlay">
-                    <h3>Howl's Moving Castle</h3>
-                    <p>A young girl is cursed to be old and joins a wizard's magical moving castle.</p>
-                </div>
-            </article>
-
-            <!-- 13. Ponyo -->
-            <article class="movie-card">
-                <img src="ponyo-movie.jpg" alt="Ponyo">
-                <div class="overlay">
-                    <h3>Ponyo</h3>
-                    <p>A goldfish princess who wants to be human befriends a young boy and causes magical chaos.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- The Maestro Section -->
-    <section id="maestro" class="maestro-section">
-        <h2>The Maestro</h2>
-        <div class="maestro-content">
-            <img src="miyazaki.jpg" alt="Hayao Miyazaki" class="maestro-img">
-            <div class="quote-box">
-                <p>"I do not believe in nationalism. I think it's a terrible thing. If you look at the history of Japan, you'll see that nationalism has always been a disaster."</p>
+        <article class="movie-card">
+            <img src="nausicaa.jpg" alt="Nausicaa">
+            <div class="overlay">
+                <h3>Nausicaa of the Valley of the Wind</h3>
+                <p>A brave princess in a postapocalyptic world strives to protect her people and the environment.</p>
             </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="castle-in-the-sky.jpg" alt="Castle in the Sky">
+            <div class="overlay">
+                <h3>Castle in the Sky</h3>
+                <p>A young boy and a girl with a magic crystal find a legendary floating castle.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="totoro.jpg" alt="My Neighbor Totoro">
+            <div class="overlay">
+                <h3>My Neighbor Totoro</h3>
+                <p>Two sisters move to the countryside and meet forest spirits.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="kiki.jpg" alt="Kiki's Delivery Service">
+            <div class="overlay">
+                <h3>Kiki's Delivery Service</h3>
+                <p>A young witch starts her own flying delivery service in a new town.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="only-yesterday.jpg" alt="Only Yesterday">
+            <div class="overlay">
+                <h3>Only Yesterday</h3>
+                <p>A woman reflects on her childhood while visiting the countryside.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="porco-rosso.jpg" alt="Porco Rosso">
+            <div class="overlay">
+                <h3>Porco Rosso</h3>
+                <p>A cursed pig pilot battles air pirates over the Adriatic Sea.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="pom-poko.jpg" alt="Pom Poko">
+            <div class="overlay">
+                <h3>Pom Poko</h3>
+                <p>Tanuki try to stop humans from destroying their forest home.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="whisper-of-the-heart.jpg" alt="Whisper of the Heart">
+            <div class="overlay">
+                <h3>Whisper of the Heart</h3>
+                <p>A girl discovers her passion for writing and meets a boy who shares her dreams.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="mononoke.jpg" alt="Princess Mononoke">
+            <div class="overlay">
+                <h3>Princess Mononoke</h3>
+                <p>A prince fights to stop a war between humans and forest gods.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="spirited-away.jpg" alt="Spirited Away">
+            <div class="overlay">
+                <h3>Spirited Away</h3>
+                <p>A girl enters a spirit world to save her parents from a curse.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="cat-returns.jpg" alt="The Cat Returns">
+            <div class="overlay">
+                <h3>The Cat Returns</h3>
+                <p>A girl is taken to the Cat Kingdom after saving a cat.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="howl.jpg" alt="Howl's Moving Castle">
+            <div class="overlay">
+                <h3>Howl's Moving Castle</h3>
+                <p>A cursed young girl joins a wizard's magical moving castle.</p>
+            </div>
+        </article>
+
+        <article class="movie-card">
+            <img src="ponyo-movie.jpg" alt="Ponyo">
+            <div class="overlay">
+                <h3>Ponyo</h3>
+                <p>A goldfish princess wants to become human and befriends a boy.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- The Maestro -->
+<section id="maestro" class="maestro-section">
+    <h2>THE MAESTRO</h2>
+    <div class="maestro-content">
+        <img src="miyazaki.jpg" alt="Hayao Miyazaki" class="maestro-img">
+        <div class="quote-box">
+            <p>"I do not believe in nationalism. I think it's a terrible thing."</p>
         </div>
-    </section>
+    </div>
+</section>
+
 </body>
 </html>
