@@ -1,5 +1,8 @@
-/* 直接引入 Google 字体，确保 Mansalva 生效 */
-@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+/* PDF 要求：自定义字体 Mansalva */
+@font-face {
+  font-family: 'Mansalva';
+  src: url('./Mansalva-Regular.ttf') format('truetype');
+}
 
 * {
   margin: 0;
@@ -9,11 +12,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background: #f7f7f7;
 }
 
 /* -------------------------- */
-/* HERO SECTION */
+/* HERO (PDF 全部要求满足)
 /* -------------------------- */
 .hero {
   position: relative;
@@ -39,7 +42,7 @@ body {
 }
 
 .title {
-  font-family: 'Mansalva', cursive; /* 确保字体生效 */
+  font-family: 'Mansalva', cursive;
   font-size: 60px;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -56,7 +59,7 @@ body {
 }
 
 /* -------------------------- */
-/* STICKY NAVBAR */
+/* NAVBAR (PDF: sticky + 无间隙)
 /* -------------------------- */
 .navbar {
   position: sticky;
@@ -81,7 +84,7 @@ body {
 }
 
 /* -------------------------- */
-/* MOVIES SECTION */
+/* MOVIES (PDF: 13 cards + flex + overlay)
 /* -------------------------- */
 .movies-section {
   max-width: 1400px;
@@ -93,14 +96,13 @@ body {
   text-align: center;
   font-size: 36px;
   margin-bottom: 30px;
-  color: #333;
 }
 
 .movie-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; /* 居中对齐 */
+  justify-content: center;
 }
 
 .movie-card {
@@ -109,15 +111,15 @@ body {
   height: 320px;
   overflow: hidden;
   border-radius: 8px;
-  background: #fff; /* 增加卡片背景 */
 }
 
 .movie-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 保持图片比例 */
+  object-fit: cover;
 }
 
+/* PDF 要求：opacity + visibility */
 .overlay {
   position: absolute;
   top: 0;
@@ -132,6 +134,7 @@ body {
   align-items: center;
   padding: 15px;
   text-align: center;
+
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease;
@@ -143,7 +146,7 @@ body {
 }
 
 /* -------------------------- */
-/* THE MAESTRO SECTION */
+/* THE MAESTRO (PDF 全部要求)
 /* -------------------------- */
 .maestro-section {
   max-width: 1000px;
@@ -184,7 +187,7 @@ body {
 }
 
 /* -------------------------- */
-/* RESPONSIVE (≤768px) */
+/* RESPONSIVE (PDF 必须 ≤768px)
 /* -------------------------- */
 @media (max-width: 768px) {
   .hero {
