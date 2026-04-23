@@ -7,148 +7,126 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Hero 区域：视频 + 背景图 + GIF + 标题 -->
-<section class="hero">
-    <!-- 👇 视频已写死在这里，直接用 -->
-    <video class="hero-video" autoplay muted loop playsinline>
-        <source src="hero-video.mp4" type="video/mp4">
-    </video>
-
-    <div class="hero-content">
-        <img src="ponyo.gif" alt="Ponyo" class="ponyo-gif">
-        <h1 class="My Ghibli">My Ghibli</h1>
-    </div>
-</section>
-
-<!-- 导航栏 -->
-<nav class="navbar">
-    <a href="#movies">MOVIES</a>
-    <a href="#maestro">THE MAESTRO</a>
-</nav>
-
-<!-- 电影卡片 -->
-<section id="movies" class="movies-section">
-    <h2>MOVIES</h2>
-    <div class="movie-container">
-
-        <article class="movie-card">
-            <img src="nausicaa.jpg" alt="Nausicaa">
-            <div class="overlay">
-                <h3>Nausicaa of the Valley of the Wind</h3>
-                <p>A brave princess in a postapocalyptic world strives to protect her people and the environment.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="castle-in-the-sky.jpg" alt="Castle in the Sky">
-            <div class="overlay">
-                <h3>Castle in the Sky</h3>
-                <p>A young boy and a girl with a magic crystal find a legendary floating castle.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="totoro.jpg" alt="My Neighbor Totoro">
-            <div class="overlay">
-                <h3>My Neighbor Totoro</h3>
-                <p>Two sisters move to the countryside and meet forest spirits.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="kiki.jpg" alt="Kiki's Delivery Service">
-            <div class="overlay">
-                <h3>Kiki's Delivery Service</h3>
-                <p>A young witch starts her own flying delivery service in a new town.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="only-yesterday.jpg" alt="Only Yesterday">
-            <div class="overlay">
-                <h3>Only Yesterday</h3>
-                <p>A woman reflects on her childhood while visiting the countryside.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="porco-rosso.jpg" alt="Porco Rosso">
-            <div class="overlay">
-                <h3>Porco Rosso</h3>
-                <p>A cursed pig pilot battles air pirates over the Adriatic Sea.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="pom-poko.jpg" alt="Pom Poko">
-            <div class="overlay">
-                <h3>Pom Poko</h3>
-                <p>Tanuki try to stop humans from destroying their forest home.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="whisper-of-the-heart.jpg" alt="Whisper of the Heart">
-            <div class="overlay">
-                <h3>Whisper of the Heart</h3>
-                <p>A girl discovers her passion for writing and meets a boy who shares her dreams.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="mononoke.jpg" alt="Princess Mononoke">
-            <div class="overlay">
-                <h3>Princess Mononoke</h3>
-                <p>A prince fights to stop a war between humans and forest gods.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="spirited-away.jpg" alt="Spirited Away">
-            <div class="overlay">
-                <h3>Spirited Away</h3>
-                <p>A girl enters a spirit world to save her parents from a curse.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="cat-returns.jpg" alt="The Cat Returns">
-            <div class="overlay">
-                <h3>The Cat Returns</h3>
-                <p>A girl is taken to the Cat Kingdom after saving a cat.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="howl.jpg" alt="Howl's Moving Castle">
-            <div class="overlay">
-                <h3>Howl's Moving Castle</h3>
-                <p>A cursed young girl joins a wizard's magical moving castle.</p>
-            </div>
-        </article>
-
-        <article class="movie-card">
-            <img src="ponyo-movie.jpg" alt="Ponyo">
-            <div class="overlay">
-                <h3>Ponyo</h3>
-                <p>A goldfish princess wants to become human and befriends a boy.</p>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- The Maestro -->
-<section id="maestro" class="maestro-section">
-    <h2>THE MAESTRO</h2>
-    <div class="maestro-content">
-        <img src="miyazaki.jpg" alt="Hayao Miyazaki" class="maestro-img">
-        <div class="quote-box">
-            <p>"I do not believe in nationalism. I think it's a terrible thing."</p>
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="ghibli-comp.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <img src="ponyo.gif" alt="Ponyo" class="ponyo-gif">
+            <h1 class="title">My Ghibli</h1>
         </div>
-    </div>
-</section>
+    </section>
 
+    <nav class="navbar">
+        <a href="#movies">MOVIES</a>
+        <a href="#maestro">THE MAESTRO</a>
+    </nav>
+
+    <section id="movies" class="movies-section">
+        <h2>Studio Ghibli Films</h2>
+        <div class="movie-container">
+            <article class="movie-card">
+                <img src="nausicaa.png" alt="Nausicaä of the Valley of the Wind">
+                <div class="overlay">
+                    <h3>Nausicaä of the Valley of the Wind</h3>
+                    <p>A brave princess fights to protect her people and the environment in a post-apocalyptic world.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="castle-in-the-sky.png" alt="Castle in the Sky">
+                <div class="overlay">
+                    <h3>Castle in the Sky</h3>
+                    <p>A young boy and girl with a magic crystal search for a legendary floating castle.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="totoro.png" alt="My Neighbor Totoro">
+                <div class="overlay">
+                    <h3>My Neighbor Totoro</h3>
+                    <p>Two sisters move to the countryside and befriend friendly forest spirits.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="kiki.png" alt="Kiki's Delivery Service">
+                <div class="overlay">
+                    <h3>Kiki's Delivery Service</h3>
+                    <p>A young witch starts her own flying delivery service in a new town.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="boy-and-heron.png" alt="The Boy and the Heron">
+                <div class="overlay">
+                    <h3>The Boy and the Heron</h3>
+                    <p>A young boy enters a magical world to find his mother.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="porco-rosso.png" alt="Porco Rosso">
+                <div class="overlay">
+                    <h3>Porco Rosso</h3>
+                    <p>A cursed Italian fighter pilot battles air pirates over the Adriatic Sea.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="spirited-away.webp" alt="Spirited Away">
+                <div class="overlay">
+                    <h3>Spirited Away</h3>
+                    <p>A girl enters a spirit bathhouse to save her parents from a curse.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="howl.png" alt="Howl's Moving Castle">
+                <div class="overlay">
+                    <h3>Howl's Moving Castle</h3>
+                    <p>A cursed young girl joins a wizard's magical moving castle.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="mononoke.png" alt="Princess Mononoke">
+                <div class="overlay">
+                    <h3>Princess Mononoke</h3>
+                    <p>A prince struggles to stop a war between humans and forest gods.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="ponyo.png" alt="Ponyo">
+                <div class="overlay">
+                    <h3>Ponyo</h3>
+                    <p>A goldfish princess wants to become human and befriends a young boy.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="wind-rises.png" alt="The Wind Rises">
+                <div class="overlay">
+                    <h3>The Wind Rises</h3>
+                    <p>A young engineer designs airplanes and chases his dreams in pre-war Japan.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="lupin3.png" alt="Lupin III: The Castle of Cagliostro">
+                <div class="overlay">
+                    <h3>Lupin III: The Castle of Cagliostro</h3>
+                    <p>A master thief battles a count to rescue a princess and uncover a counterfeit ring.</p>
+                </div>
+            </article>
+            <article class="movie-card">
+                <img src="conan.png" alt="Future Boy Conan">
+                <div class="overlay">
+                    <h3>Future Boy Conan</h3>
+                    <p>A young boy fights to protect his friends and a post-apocalyptic world from evil forces.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="maestro" class="maestro-section">
+        <h2>The Maestro</h2>
+        <div class="maestro-content">
+            <img src="hayao-miyazaki.webp" alt="Hayao Miyazaki" class="maestro-img">
+            <div class="quote-box">
+                <p>"The creation of a single world comes from a huge number of fragments and chaos."</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
