@@ -10,117 +10,119 @@
 }
 
 body {
-    font-family: sans-serif;
-    background-color: #fff;
+    font-family: Arial, Helvetica;
+    background-color: #f8f9fa;
 }
 
 .hero {
-    background-color: #89b8c9;
-    padding: 30px 20px;
+    background-color: #73a7b8;
+    padding: 35px 25px;
     text-align: center;
 }
 
-.hero-header {
+.hero-top {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 14px;
+    margin-bottom: 30px;
 }
 
-.hero-header img {
-    width: 40px;
+.hero-top img {
+    width: 48px;
 }
 
-.hero-header h1 {
+.hero-top h1 {
     font-family: 'Mansalva', cursive;
-    font-size: 42px;
-    color: white;
+    font-size: 46px;
+    color: #ffffff;
 }
 
-.hero-video {
-    width: 60%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.video-bg {
+    width: 58%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.18);
 }
 
-.navbar {
-    background-color: #ffccd5;
-    padding: 14px 0;
+.menu-bar {
+    background-color: #f5c5d1;
+    padding: 16px 0;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 99;
 }
 
-.navbar a {
-    margin: 0 40px;
+.menu-bar a {
+    margin: 0 45px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #2a2a2a;
+    font-weight: 600;
     font-size: 15px;
 }
 
-.movies {
-    padding: 40px 20px;
-    max-width: 1200px;
+.film-section {
+    padding: 45px 25px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.movie-grid {
+.film-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
 }
 
-.card {
-    border-radius: 6px;
+.film-item {
+    border-radius: 8px;
     overflow: hidden;
 }
 
-.card img {
+.film-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.maestro {
+.director-section {
     display: flex;
     align-items: center;
-    background-color: #a9d18e;
+    background-color: #b2d8b3;
+    margin-top: 20px;
 }
 
-.maestro img {
-    width: 40%;
+.director-section img {
+    width: 38%;
 }
 
-.quote {
-    width: 60%;
-    padding: 50px;
+.text-box {
+    width: 62%;
+    padding: 55px;
     text-align: center;
     font-weight: bold;
 }
 
-.quote p:first-child {
-    font-size: 24px;
-    margin-bottom: 10px;
+.text-box p:first-child {
+    font-size: 25px;
+    margin-bottom: 12px;
 }
 
-.quote p:last-child {
-    font-size: 16px;
+.text-box p:last-child {
+    font-size: 17px;
 }
 
 @media (max-width: 768px) {
-    .movie-grid {
+    .film-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .maestro {
+    .director-section {
         flex-direction: column;
     }
-    .maestro img, .quote {
+    .director-section img, .text-box {
         width: 100%;
     }
-    .hero-video {
-        width: 90%;
+    .video-bg {
+        width: 88%;
     }
 }
