@@ -3,18 +3,15 @@
   font-family: 'Mansalva';
   src: url('./Mansalva-Regular.ttf') format('truetype');
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
 }
-
 /* -------------------------- */
 /* HERO (PDF 全部要求满足)
 /* -------------------------- */
@@ -28,7 +25,6 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -36,18 +32,15 @@ body {
   align-items: center;
   gap: 20px;
 }
-
 .ponyo-gif {
   width: 100px;
 }
-
 .title {
   font-family: 'Mansalva', cursive;
   font-size: 60px;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
 .hero-video {
   position: absolute;
   bottom: 0;
@@ -57,7 +50,6 @@ body {
   z-index: 1;
   opacity: 0.7;
 }
-
 /* -------------------------- */
 /* NAVBAR (PDF: sticky + 无间隙)
 /* -------------------------- */
@@ -71,18 +63,15 @@ body {
   padding: 18px 0;
   z-index: 99;
 }
-
 .navbar a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
-
 .navbar a:hover {
   color: #ffcc00;
 }
-
 /* -------------------------- */
 /* MOVIES (PDF: 13 cards + flex + overlay)
 /* -------------------------- */
@@ -91,20 +80,17 @@ body {
   margin: 40px auto;
   padding: 0 20px;
 }
-
 .movies-section h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 30px;
 }
-
 .movie-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-
 .movie-card {
   position: relative;
   width: 220px;
@@ -112,13 +98,11 @@ body {
   overflow: hidden;
   border-radius: 8px;
 }
-
 .movie-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 /* PDF 要求：opacity + visibility */
 .overlay {
   position: absolute;
@@ -134,17 +118,14 @@ body {
   align-items: center;
   padding: 15px;
   text-align: center;
-
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease;
 }
-
 .movie-card:hover .overlay {
   opacity: 1;
   visibility: visible;
 }
-
 /* -------------------------- */
 /* THE MAESTRO (PDF 全部要求)
 /* -------------------------- */
@@ -153,25 +134,21 @@ body {
   margin: 60px auto;
   padding: 0 20px;
 }
-
 .maestro-section h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 30px;
 }
-
 .maestro-content {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: center;
 }
-
 .maestro-img {
   width: 280px;
   border-radius: 8px;
 }
-
 .quote-box {
   width: 500px;
   padding: 30px;
@@ -181,11 +158,9 @@ body {
   font-style: italic;
   transition: 0.3s;
 }
-
 .quote-box:hover {
   background: #ffd700;
 }
-
 /* -------------------------- */
 /* RESPONSIVE (PDF 必须 ≤768px)
 /* -------------------------- */
