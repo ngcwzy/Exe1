@@ -1,156 +1,127 @@
 @font-face {
   font-family: 'Mansalva';
-  src: url('./Mansalva-Regular.ttf') format('truetype');
+  src: url('Mansalva-Regular.ttf') format('truetype');
 }
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
+    font-family: sans-serif;
+    background-color: #ffffff;
 }
+
 .hero {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: #89b8c9;
-  padding: 20px;
+    background-color: #89b8c9;
+    padding: 30px;
+    text-align: center;
 }
-.hero-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
 }
-.ponyo-gif {
-  width: 40px;
+
+.hero-content img {
+    width: 45px;
 }
-.title {
-  font-family: 'Mansalva', cursive;
-  font-size: 40px;
-  color: white;
+
+.hero-content h1 {
+    font-family: 'Mansalva', cursive;
+    font-size: 42px;
+    color: white;
 }
-.hero-video-wrapper {
-  width: 50%;
-  margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
+
 .hero-video {
-  width: 100%;
-  display: block;
+    width: 65%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-.totoro-decor {
-  position: absolute;
-  right: 10%;
-  bottom: 20px;
-  width: 120px;
-}
+
 .navbar {
-  position: sticky;
-  top: 0;
-  background: #ffccd5;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 12px 0;
-  z-index: 99;
+    background-color: #ffccd5;
+    padding: 14px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
 .navbar a {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
 }
-.movies-section {
-  padding: 30px 20px;
+
+.movies {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.movie-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
-.movie-card {
-  position: relative;
-  width: 180px;
-  height: 270px;
-  overflow: hidden;
-  border-radius: 4px;
+
+.card {
+    border-radius: 6px;
+    overflow: hidden;
 }
-.movie-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s ease;
-}
-.movie-card:hover .overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.maestro-section {
-  display: flex;
-  align-items: center;
-}
-.maestro-img {
-  width: 35%;
-  height: auto;
-}
-.quote-container {
-  width: 65%;
-  background-color: #a9d18e;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-}
-.quote {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.quote-author {
-  font-size: 16px;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  .hero-video-wrapper {
-    width: 80%;
-  }
-  .totoro-decor {
-    display: none;
-  }
-  .maestro-section {
-    flex-direction: column;
-  }
-  .maestro-img, .quote-container {
+
+.card img {
     width: 100%;
-  }
-  .movie-card {
-    width: 140px;
-    height: 210px;
-  }
+    height: 100%;
+    object-fit: cover;
+}
+
+.maestro {
+    display: flex;
+    align-items: center;
+    background-color: #a9d18e;
+}
+
+.maestro img {
+    width: 40%;
+}
+
+.quote {
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.quote p:first-child {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quote p:last-child {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .maestro {
+        flex-direction: column;
+    }
+    .maestro img, .quote {
+        width: 100%;
+    }
+    .hero-video {
+        width: 90%;
+    }
 }
