@@ -11,38 +11,37 @@
 
 body {
     font-family: sans-serif;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .hero {
     background-color: #89b8c9;
-    padding: 30px;
+    padding: 30px 20px;
     text-align: center;
 }
 
-.hero-content {
+.hero-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-bottom: 25px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.hero-content img {
-    width: 45px;
+.hero-header img {
+    width: 40px;
 }
 
-.hero-content h1 {
+.hero-header h1 {
     font-family: 'Mansalva', cursive;
     font-size: 42px;
     color: white;
 }
 
 .hero-video {
-    width: 65%;
-    max-width: 800px;
+    width: 60%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .navbar {
