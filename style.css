@@ -1,8 +1,5 @@
-/* Custom Font - REQUIRED */
-@font-face {
-  font-family: 'Mansalva';
-  src: url('./Mansalva-Regular.ttf') format('truetype');
-}
+/* 直接引入 Google 字体，确保 Mansalva 生效 */
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +13,7 @@ body {
 }
 
 /* -------------------------- */
-/* HERO SECTION (REQUIRED) */
+/* HERO SECTION */
 /* -------------------------- */
 .hero {
   position: relative;
@@ -42,7 +39,7 @@ body {
 }
 
 .title {
-  font-family: 'Mansalva', cursive;
+  font-family: 'Mansalva', cursive; /* 确保字体生效 */
   font-size: 60px;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -59,8 +56,7 @@ body {
 }
 
 /* -------------------------- */
-/* STICKY NAVBAR (REQUIRED) */
-/* NO GAP BETWEEN HERO & NAV */
+/* STICKY NAVBAR */
 /* -------------------------- */
 .navbar {
   position: sticky;
@@ -85,8 +81,7 @@ body {
 }
 
 /* -------------------------- */
-/* MOVIES SECTION (REQUIRED) */
-/* 13 cards, flex, overlay */
+/* MOVIES SECTION */
 /* -------------------------- */
 .movies-section {
   max-width: 1400px;
@@ -105,7 +100,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: center; /* 居中对齐 */
 }
 
 .movie-card {
@@ -114,12 +109,13 @@ body {
   height: 320px;
   overflow: hidden;
   border-radius: 8px;
+  background: #fff; /* 增加卡片背景 */
 }
 
 .movie-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* 保持图片比例 */
 }
 
 .overlay {
@@ -136,8 +132,6 @@ body {
   align-items: center;
   padding: 15px;
   text-align: center;
-
-  /* REQUIRED */
   opacity: 0;
   visibility: hidden;
   transition: 0.4s ease;
@@ -149,9 +143,7 @@ body {
 }
 
 /* -------------------------- */
-/* THE MAESTRO (REQUIRED) */
-/* img smaller than quote box */
-/* hover background change */
+/* THE MAESTRO SECTION */
 /* -------------------------- */
 .maestro-section {
   max-width: 1000px;
@@ -192,7 +184,7 @@ body {
 }
 
 /* -------------------------- */
-/* RESPONSIVE ≤768px (REQUIRED) */
+/* RESPONSIVE (≤768px) */
 /* -------------------------- */
 @media (max-width: 768px) {
   .hero {
